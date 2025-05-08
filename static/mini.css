@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.fullbg {
+    background: linear-gradient(135deg, #5f2c82, #49a09d);
+    height: 30vh;
+    color: white;
+    font-family: "Bree Serif", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    animation: floatIn 1.2s ease-in-out;
+}
+@keyframes floatIn {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.logo {
+    height: 150px;
+    width: 300px;
+    padding-top: 12px;
+}
+.qote {
+    font-family: "Roboto";
+    font-size: 28px;
+}
+.purplebg {
+    background-color: #c7b1fa;
+    height: auto;
+    padding: 50px 20px;
+}
+.textcard,
+.seccard,
+.outputcard {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.textcard:hover,
+.seccard:hover,
+.outputcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+.fonttext {
+    font-family: "Lobster";
+    font-size: 26px;
+    color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.handimage {
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.carcard {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+}
+.btn-gradient,
+.btn-pink-gradient {
+    border: none;
+    color: white;
+    height: 50px;
+    width: 170px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.btn-gradient {
+    background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+.btn-pink-gradient {
+    background-image: linear-gradient(to right, #f77ceb, #4f58f7);
+}
+
+.btn-gradient:hover,
+.btn-pink-gradient:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+input[type="file"],
+input[type="submit"] {
+    background-color: rgb(205, 100, 255);
+    color: white;
+    padding: 10px 20px;
+    border: solid;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="file"]:hover,
+input[type="submit"]:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.thumbs-slider {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbs-slider .thumb-icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.thumbs-slider .thumb-icon.active {
+    color: #007bff;
+}

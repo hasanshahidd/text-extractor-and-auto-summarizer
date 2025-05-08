@@ -1,0 +1,13 @@
+Flask
+python-dotenv
+opencv-python
+numpy
+PyMuPDF
+PyPDF2
+python-docx
+paddleocr
+albumentations
+langchain
+langchain-core
+langchain-groq
+groq
